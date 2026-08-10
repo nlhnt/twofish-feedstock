@@ -22,6 +22,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
     - msinttypes   # [win and vc < 14]
   run:
     - python
