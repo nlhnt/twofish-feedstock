@@ -9,6 +9,8 @@ source:
   fn: '{{ name }}-{{ version }}.tar.gz'
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   'sha256': 'b09d8bb50d33b23ff34cafb1f9209f858f752935c6a5c901efb92a41acb830fa'
+  patches:
+    - patches/fix-imp-module.patch
 
 build:
   number: 1003
